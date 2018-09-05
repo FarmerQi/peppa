@@ -1,6 +1,6 @@
 package model;
 
-public class userDO {
+public class UserDO {
     private Integer id;
 
     private String name;

@@ -3,14 +3,14 @@ package model;
 import java.util.ArrayList;
 import java.util.List;
 
-public class userDOExample {
+public class UserDOExample {
     protected String orderByClause;
 
     protected boolean distinct;
 
     protected List<Criteria> oredCriteria;
 
-    public userDOExample() {
+    public UserDOExample() {
         oredCriteria = new ArrayList<Criteria>();
     }
 
