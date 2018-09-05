@@ -9,24 +9,23 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+
     <artifactId>peppa-api</artifactId>
     <dependencies>
-
-
         <!--spring Boot web 容器-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-
         </dependency>
 
         <!--actuator是监控系统健康情况的工具-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
-
         </dependency>
 
     </dependencies>
+
+
 
 </project>

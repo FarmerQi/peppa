@@ -4,14 +4,18 @@
  * use it only in accordance with the terms of the license agreement you entered
  * into with Tuhu.cn
  */
+package PeppaPig;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * @Auther: qixin
- * @Date: 2018/09/04 17:53
+ * @Date: 2018/09/05 10:59
  */
-
-
+@SpringBootApplication
 public class PeppaApplication {
-
-
+    public static void main(String[] args){
+        SpringApplication.run(PeppaApplication.class,args);
+    }
 }
