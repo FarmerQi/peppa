@@ -1,30 +1,30 @@
 package dao;
 
 import java.util.List;
-import model.userDO;
-import model.userDOExample;
+import model.UserDO;
+import model.UserDOExample;
 import org.apache.ibatis.annotations.Param;
 
-public interface userDOMapper {
-    long countByExample(userDOExample example);
+public interface UserDOMapper {
+    long countByExample(UserDOExample example);
 
-    int deleteByExample(userDOExample example);
+    int deleteByExample(UserDOExample example);
 
     int deleteByPrimaryKey(Integer id);
 
-    int insert(userDO record);
+    int insert(UserDO record);
 
-    int insertSelective(userDO record);
+    int insertSelective(UserDO record);
 
-    List<userDO> selectByExample(userDOExample example);
+    List<UserDO> selectByExample(UserDOExample example);
 
-    userDO selectByPrimaryKey(Integer id);
+    UserDO selectByPrimaryKey(Integer id);
 
-    int updateByExampleSelective(@Param("record") userDO record, @Param("example") userDOExample example);
+    int updateByExampleSelective(@Param("record") UserDO record, @Param("example") UserDOExample example);
 
-    int updateByExample(@Param("record") userDO record, @Param("example") userDOExample example);
+    int updateByExample(@Param("record") UserDO record, @Param("example") UserDOExample example);
 
-    int updateByPrimaryKeySelective(userDO record);
+    int updateByPrimaryKeySelective(UserDO record);
 
-    int updateByPrimaryKey(userDO record);
+    int updateByPrimaryKey(UserDO record);
 }

@@ -4,20 +4,13 @@
  * use it only in accordance with the terms of the license agreement you entered
  * into with Tuhu.cn
  */
-package repository;
+package service.impl;
 
-import dao.UserDOMapper;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import service.UserInfoService;
 
 /**
  * @Auther: qixin
- * @Date: 2018/09/05 17:41
+ * @Date: 2018/09/05 18:01
  */
-@Component
-public class UserRepository {
-    @Autowired
-    private UserDOMapper userDOMapper;
-
-
+public class UserInfoServiceImpl implements UserInfoService {
 }

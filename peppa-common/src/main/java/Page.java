@@ -23,7 +23,7 @@ public class Page<T> implements Serializable {
     /**
      * 每页大小
      */
-    private Integer perPageSize;
+    private Integer pageSize;
 
     /**
      * 总数量
@@ -43,12 +43,12 @@ public class Page<T> implements Serializable {
         this.start = start;
     }
 
-    public Integer getPerPageSize() {
-        return perPageSize;
+    public Integer getPageSize() {
+        return pageSize;
     }
 
-    public void setPerPageSize(Integer perPageSize) {
-        this.perPageSize = perPageSize;
+    public void setPageSize(Integer pageSize) {
+        this.pageSize = pageSize;
     }
 
     public Integer getTotalSize() {

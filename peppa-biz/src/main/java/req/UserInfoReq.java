@@ -4,20 +4,17 @@
  * use it only in accordance with the terms of the license agreement you entered
  * into with Tuhu.cn
  */
-package repository;
+package req;
 
-import dao.UserDOMapper;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import lombok.Data;
 
 /**
  * @Auther: qixin
- * @Date: 2018/09/05 17:41
+ * @Date: 2018/09/05 17:55
  */
-@Component
-public class UserRepository {
-    @Autowired
-    private UserDOMapper userDOMapper;
-
+@Data
+public class UserInfoReq {
+    Integer start;
+    Integer pageSize;
 
 }
