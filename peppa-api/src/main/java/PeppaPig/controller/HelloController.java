@@ -6,7 +6,6 @@
  */
 package PeppaPig.controller;
 
-import dataobject.User;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -22,12 +21,4 @@ public class HelloController {
         return "Hello 阿心！！！";
     }
 
-    @RequestMapping("user")
-    public User user(){
-        User user = new User();
-        user.setId(1);
-        user.setName("阿心");
-        user.setPhone("18328090104");
-        return user;
-    }
 }
