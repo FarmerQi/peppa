@@ -7,8 +7,10 @@
 package repository;
 
 import dao.UserDOMapper;
+import model.UserDO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+
 
 /**
  * @Auther: qixin
@@ -18,6 +20,10 @@ import org.springframework.stereotype.Component;
 public class UserRepository {
     @Autowired
     private UserDOMapper userDOMapper;
+
+
+
+
 
 
 }
