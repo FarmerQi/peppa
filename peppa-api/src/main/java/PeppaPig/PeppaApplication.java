@@ -8,11 +8,15 @@ package PeppaPig;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
+
 /**
  * @Auther: qixin
  * @Date: 2018/09/05 10:59
  */
+
 @SpringBootApplication
+@ComponentScan(value = {"peppa.user","dao"})
 public class PeppaApplication {
     public static void main(String[] args){
         SpringApplication.run(PeppaApplication.class,args);

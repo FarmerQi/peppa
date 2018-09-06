@@ -5,8 +5,8 @@
 
 <generatorConfiguration>
     <!-- 配置mysql 驱动jar包路径.用了绝对路径 -->
-    <!--<classPathEntry location="/c/Users/wangzhenhui/.m2/repository/mysql/mysql-connector-java/5.1.41/mysql-connector-java-5.1.41.jar" />-->
-    <classPathEntry location="C:\Users\qixin\.m2\repository\mysql\mysql-connector-java\5.1.41\mysql-connector-java-5.1.41.jar" />
+    <!--<classPathEntry location="/c/Users/wangzhenhui/.m2/peppa.user.repository/mysql/mysql-connector-java/5.1.41/mysql-connector-java-5.1.41.jar" />-->
+    <classPathEntry location="C:\Users\qixin\.m2\peppa.user.repository\mysql\mysql-connector-java\5.1.41\mysql-connector-java-5.1.41.jar" />
 
     <context id="MySqlContext" targetRuntime="MyBatis3">
         <!-- 防止生成的代码中有很多注释，加入下面的配置控制 -->

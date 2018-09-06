@@ -4,13 +4,27 @@
  * use it only in accordance with the terms of the license agreement you entered
  * into with Tuhu.cn
  */
-package service.impl;
+package peppa.user.service.impl;
 
-import service.UserInfoService;
+import model.UserDO;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import peppa.user.repository.UserRepository;
+import peppa.user.service.UserInfoService;
 
 /**
  * @Auther: qixin
  * @Date: 2018/09/05 18:01
  */
+
+@Service
 public class UserInfoServiceImpl implements UserInfoService {
+
+    @Autowired
+    UserRepository userRepository;
+
+    @Override
+    public UserDO selectByPrimaryKey(Integer id) {
+        return userRepository.selectByPrimaryKey(id);
+    }
 }

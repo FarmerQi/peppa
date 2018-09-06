@@ -4,11 +4,17 @@
  * use it only in accordance with the terms of the license agreement you entered
  * into with Tuhu.cn
  */
-package service;
+package peppa.user.req;
+
+import lombok.Data;
 
 /**
  * @Auther: qixin
- * @Date: 2018/09/05 18:00
+ * @Date: 2018/09/05 17:55
  */
-public interface UserInfoService {
+@Data
+public class UserInfoReq {
+    Integer start;
+    Integer pageSize;
+
 }

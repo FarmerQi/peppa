@@ -6,6 +6,8 @@
  */
 package PeppaPig.controller;
 
+
+import model.UserDO;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -14,11 +16,29 @@ import org.springframework.web.bind.annotation.RestController;
  * @Date: 2018/09/05 11:40
  */
 @RestController
+@RequestMapping("peppa")
 public class HelloController {
+
+//    @Autowired
+//    @Qualifier("userInfoService")
+//    private UserInfoService userInfoService;
 
     @RequestMapping("/index")
     public String hello(){
         return "Hello 阿心！！！";
     }
 
+//    @RequestMapping("/{id}")
+//    public UserDO findById(@PathVariable("id")Integer id){
+//        return userInfoService.selectByPrimaryKey(id);
+//    }
+
+    @RequestMapping("user")
+    public UserDO getUser(){
+        UserDO userDO = new UserDO();
+        userDO.setId(1);
+        userDO.setName("阿心");
+        userDO.setPhone("18328090104");
+        return userDO;
+    }
 }
