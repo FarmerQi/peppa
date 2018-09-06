@@ -22,9 +22,10 @@ public class UserRepository {
     private UserDOMapper userDOMapper;
 
     public UserDO selectByPrimaryKey(Integer id){
-        UserDO user = new UserDO();
-        user = userDOMapper.selectByPrimaryKey(id);
-        return user;
+
+        return userDOMapper.selectByPrimaryKey(id);
     }
+
+
 
 }

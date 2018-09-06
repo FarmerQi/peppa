@@ -1,0 +1,18 @@
+GET http://localhost:8080/peppa/{1}
+
+###
+
+GET http://localhost:8080/peppa/{1}
+
+###
+
+GET http://localhost:8080/peppa/user
+
+<> 2018-09-06T050931.200.json
+
+###
+
+GET http://localhost:8080/peppa/{id}
+
+###
+

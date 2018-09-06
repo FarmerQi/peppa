@@ -7,9 +7,14 @@
 package PeppaPig.controller;
 
 
+import dao.TestMapper;
+import dao.UserDOMapper;
 import model.UserDO;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import peppa.user.service.UserInfoService;
 
 /**
  * @Auther: qixin
@@ -19,19 +24,20 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("peppa")
 public class HelloController {
 
-//    @Autowired
-//    @Qualifier("userInfoService")
-//    private UserInfoService userInfoService;
+    @Autowired
+    private UserInfoService userInfoService;
 
     @RequestMapping("/index")
     public String hello(){
         return "Hello 阿心！！！";
     }
 
-//    @RequestMapping("/{id}")
-//    public UserDO findById(@PathVariable("id")Integer id){
-//        return userInfoService.selectByPrimaryKey(id);
-//    }
+
+
+    @RequestMapping("/{id}")
+    public UserDO findById(@PathVariable("id")Integer id){
+        return userInfoService.selectByPrimaryKey(id);
+    }
 
     @RequestMapping("user")
     public UserDO getUser(){

@@ -6,6 +6,7 @@
  */
 package PeppaPig;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
@@ -16,7 +17,8 @@ import org.springframework.context.annotation.ComponentScan;
  */
 
 @SpringBootApplication
-@ComponentScan(value = {"peppa.user","dao"})
+@ComponentScan(basePackages = {"peppa","PeppaPig"})
+@MapperScan(value = {"dao"})
 public class PeppaApplication {
     public static void main(String[] args){
         SpringApplication.run(PeppaApplication.class,args);
