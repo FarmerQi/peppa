@@ -6,25 +6,33 @@
  */
 package PeppaPig.controller;
 
+import com.peppa.dal.model.UserDO;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import peppa.user.repository.UserRepository;
+import org.springframework.web.bind.annotation.RestController;
 import peppa.user.req.AddUserReq;
+import peppa.user.service.UserService;
 
 /**
  * @Auther: qixin
  * @Date: 2018/09/07 16:24
  */
-@Controller
+@RestController
 @RequestMapping("user")
 public class UserController {
     @Autowired
-    private UserRepository userRepository;
+    private UserService userService;
 
-    @RequestMapping(value = "add" ,method = RequestMethod.POST)
-    public void addUser(AddUserReq req){
-
+    @RequestMapping(value = "add",method = RequestMethod.POST)
+    public String addUser(@RequestBody AddUserReq req){
+        UserDO userDO = new UserDO();
+        userDO.setName(req.getName());
+        userDO.setPhone(req.getPhone());
+        String result = userService.addUser(userDO);
+        return result;
     }
+
+
 }

@@ -11,6 +11,7 @@ import com.peppa.dal.model.UserDO;
 import com.peppa.dal.model.UserDOExample;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 
 
 /**
@@ -24,11 +25,8 @@ public class UserRepository {
     private UserDOMapper userDOMapper;
 
     public UserDO selectByPrimaryKey(Integer id){
-
         return userDOMapper.selectByPrimaryKey(id);
     }
-
-
 
 
     public Integer count(){
@@ -38,9 +36,14 @@ public class UserRepository {
         return result;
     }
 
-    public void addUser(UserDO userDO){
+    @Transactional
+    public String addUser(UserDO userDO){
         int result = userDOMapper.insert(userDO);
-
+        if (result==1){
+            return "success";
+        }else {
+            return "添加失败";
+        }
     }
 
 

@@ -7,12 +7,15 @@
 package peppa.user.service;
 
 import com.peppa.dal.model.UserDO;
+import peppa.user.req.AddUserReq;
 
 /**
  * @Auther: qixin
  * @Date: 2018/09/05 18:00
  */
-public interface UserInfoService {
+public interface UserService {
 
     UserDO selectByPrimaryKey(Integer id);
+
+    String addUser(UserDO user);
 }

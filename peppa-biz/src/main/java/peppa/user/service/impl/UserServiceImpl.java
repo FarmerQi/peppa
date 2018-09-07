@@ -11,7 +11,8 @@ import com.peppa.dal.model.UserDO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import peppa.user.repository.UserRepository;
-import peppa.user.service.UserInfoService;
+import peppa.user.req.AddUserReq;
+import peppa.user.service.UserService;
 
 /**
  * @Auther: qixin
@@ -19,7 +20,7 @@ import peppa.user.service.UserInfoService;
  */
 
 @Service
-public class UserInfoServiceImpl implements UserInfoService {
+public class UserServiceImpl implements UserService {
 
     @Autowired
     UserRepository userRepository;
@@ -28,4 +29,11 @@ public class UserInfoServiceImpl implements UserInfoService {
     public UserDO selectByPrimaryKey(Integer id) {
         return userRepository.selectByPrimaryKey(id);
     }
+
+    @Override
+    public String addUser(UserDO user) {
+        return userRepository.addUser(user);
+    }
+
+
 }
