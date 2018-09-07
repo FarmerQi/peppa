@@ -4,15 +4,16 @@
  * use it only in accordance with the terms of the license agreement you entered
  * into with Tuhu.cn
  */
-package dao;
+package peppa.user.req;
 
-import model.UserDO;
+import lombok.Data;
 
 /**
  * @Auther: qixin
- * @Date: 2018/09/06 18:09
+ * @Date: 2018/09/07 16:23
  */
-public interface TestMapper {
-
-    UserDO selectById(Integer id);
+@Data
+public class AddUserReq {
+    String name;
+    String phone;
 }

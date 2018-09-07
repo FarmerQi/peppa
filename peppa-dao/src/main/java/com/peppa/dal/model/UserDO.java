@@ -1,4 +1,4 @@
-package model;
+package com.peppa.dal.model;
 
 public class UserDO {
     private Integer id;

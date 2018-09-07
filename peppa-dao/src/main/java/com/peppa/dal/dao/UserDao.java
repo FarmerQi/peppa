@@ -4,15 +4,17 @@
  * use it only in accordance with the terms of the license agreement you entered
  * into with Tuhu.cn
  */
-package peppa.user.service;
+package com.peppa.dal.dao;
 
-import com.peppa.dal.model.UserDO;
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Select;
 
 /**
  * @Auther: qixin
- * @Date: 2018/09/05 18:00
+ * @Date: 2018/09/07 14:42
  */
-public interface UserInfoService {
-
-    UserDO selectByPrimaryKey(Integer id);
+@Mapper
+public interface UserDao {
+    @Select("select count(*) from user")
+    int count();
 }

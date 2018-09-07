@@ -1,4 +1,4 @@
-package model;
+package com.peppa.dal.model;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -18,7 +18,8 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @ComponentScan(basePackages = {"peppa","PeppaPig"})
-@MapperScan(value = {"dao"})
+@MapperScan(value = {"com.peppa.dal.dao"})
+
 public class PeppaApplication {
     public static void main(String[] args){
         SpringApplication.run(PeppaApplication.class,args);

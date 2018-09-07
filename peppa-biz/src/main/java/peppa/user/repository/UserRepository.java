@@ -6,8 +6,9 @@
  */
 package peppa.user.repository;
 
-import dao.UserDOMapper;
-import model.UserDO;
+import com.peppa.dal.dao.UserDOMapper;
+import com.peppa.dal.model.UserDO;
+import com.peppa.dal.model.UserDOExample;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -16,6 +17,7 @@ import org.springframework.stereotype.Component;
  * @Auther: qixin
  * @Date: 2018/09/05 17:41
  */
+
 @Component
 public class UserRepository {
     @Autowired
@@ -26,6 +28,20 @@ public class UserRepository {
         return userDOMapper.selectByPrimaryKey(id);
     }
 
+
+
+
+    public Integer count(){
+        UserDOExample example = new UserDOExample();
+        int result = 0;
+        result = (int)userDOMapper.countByExample(example);
+        return result;
+    }
+
+    public void addUser(UserDO userDO){
+        int result = userDOMapper.insert(userDO);
+
+    }
 
 
 }

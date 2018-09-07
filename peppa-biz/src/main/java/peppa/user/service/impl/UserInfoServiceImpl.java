@@ -7,7 +7,7 @@
 package peppa.user.service.impl;
 
 
-import model.UserDO;
+import com.peppa.dal.model.UserDO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import peppa.user.repository.UserRepository;

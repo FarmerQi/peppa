@@ -10,15 +10,29 @@
       <change beforePath="$PROJECT_DIR$/peppa-api/target/classes/PeppaPig/controller/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/peppa-api/target/classes/PeppaPig/controller/HelloController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/peppa-api/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/peppa-api/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/peppa-biz/src/main/java/peppa/user/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/peppa-biz/src/main/java/peppa/user/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/peppa-biz/src/main/java/peppa/user/service/UserInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/peppa-biz/src/main/java/peppa/user/service/UserInfoService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/peppa-biz/src/main/java/peppa/user/service/impl/UserInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/peppa-biz/src/main/java/peppa/user/service/impl/UserInfoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/peppa-biz/target/classes/peppa/user/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/peppa-biz/target/classes/peppa/user/repository/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/peppa-biz/target/classes/peppa/user/service/UserInfoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/peppa-biz/target/classes/peppa/user/service/UserInfoService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/peppa-biz/target/classes/peppa/user/service/impl/UserInfoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/peppa-biz/target/classes/peppa/user/service/impl/UserInfoServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/peppa-dao/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/peppa-dao/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/peppa-dao/src/main/java/dao/TestMapper.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/peppa-dao/src/main/java/dao/UserDOMapper.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/peppa-dao/src/main/java/model/UserDO.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/peppa-dao/src/main/java/model/UserDOExample.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/peppa-dao/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/peppa-dao/src/main/resources/generatorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/peppa-dao/src/main/resources/mapper/TestMapper.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/peppa-dao/src/main/resources/mapper/UserDOMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/peppa-dao/src/main/resources/testMappper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/peppa-dao/target/classes/dao/TestMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/peppa-dao/target/classes/dao/UserDOMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/peppa-dao/target/classes/generatorConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/peppa-dao/target/classes/mapper/TestMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/peppa-dao/target/classes/mapper/UserDOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/peppa-dao/target/classes/mapper/UserDOMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/peppa-dao/target/classes/model/UserDO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/peppa-dao/target/classes/model/UserDOExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/peppa-dao/target/classes/model/UserDOExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/peppa-dao/target/classes/model/UserDOExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/peppa-dao/target/classes/model/UserDOExample.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -65,25 +79,6 @@
     </expand>
     <select />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/peppa-dao/src/main/resources/mapper/UserDOMapper.xml">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="323">
-                    <caret line="85" column="30" lean-forward="true" selection-start-line="85" selection-start-column="30" selection-end-line="85" selection-end-column="30" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-59632184">
       <usages-collector id="statistics.lifecycle.project">
@@ -93,44 +88,49 @@
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="13" />
+          <entry key="class" value="27" />
+          <entry key="html" value="1" />
           <entry key="http" value="1" />
-          <entry key="java" value="75" />
-          <entry key="properties" value="10" />
+          <entry key="java" value="118" />
+          <entry key="properties" value="18" />
           <entry key="sql" value="1" />
-          <entry key="xml" value="59" />
+          <entry key="xml" value="79" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="13" />
-          <entry key="JAVA" value="75" />
-          <entry key="Properties" value="10" />
+          <entry key="CLASS" value="27" />
+          <entry key="HTML" value="1" />
+          <entry key="JAVA" value="118" />
+          <entry key="Properties" value="18" />
           <entry key="Scratch" value="2" />
-          <entry key="XML" value="59" />
+          <entry key="XML" value="79" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="html" value="16" />
           <entry key="http" value="3" />
-          <entry key="java" value="1814" />
-          <entry key="properties" value="326" />
+          <entry key="java" value="2294" />
+          <entry key="properties" value="758" />
           <entry key="txt" value="75" />
-          <entry key="xml" value="749" />
+          <entry key="xml" value="872" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1814" />
+          <entry key="HTML" value="16" />
+          <entry key="JAVA" value="2294" />
           <entry key="PLAIN_TEXT" value="75" />
-          <entry key="Properties" value="326" />
+          <entry key="Properties" value="758" />
           <entry key="Scratch" value="3" />
-          <entry key="XML" value="749" />
+          <entry key="XML" value="872" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.spring.core.usages.trigger">
@@ -152,91 +152,64 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/peppa-dao/pom.xml">
+        <entry file="file://$PROJECT_DIR$/peppa-dao/src/main/java/com/peppa/dal/dao/UserDOMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="50" column="19" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/peppa-dao/src/main/java/dao/UserDOMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/peppa-biz/src/main/java/peppa/user/service/impl/UserInfoServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="289">
+              <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#879#880#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/peppa-biz/src/main/java/peppa/user/repository/UserRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/peppa-api/src/main/java/PeppaPig/controller/HelloController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="36" column="28" lean-forward="true" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+            <state relative-caret-position="526">
+              <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1037#1038#0" expanded="true" />
-                <element signature="e#1098#1099#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/peppa-dao/src/main/java/dao/TestMapper.java">
+        <entry file="file://$PROJECT_DIR$/peppa-api/src/main/java/PeppaPig/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+            <state relative-caret-position="374">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/peppa-dao/src/main/resources/mapper/TestMapper.xml">
+        <entry file="file://$PROJECT_DIR$/peppa-biz/src/main/java/peppa/user/req/UserInfoReq.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="26" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="26" />
+            <state relative-caret-position="221">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/peppa-biz/src/main/java/peppa/user/repository/UserRepository.java">
+        <entry file="file://$PROJECT_DIR$/peppa-biz/src/main/java/peppa/user/req/AddUserReq.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/peppa-biz/src/main/java/peppa/user/service/UserInfoService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.11.RELEASE/spring-web-4.3.11.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="123" selection-start-line="123" selection-end-line="123" />
+            <state relative-caret-position="153">
+              <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -246,14 +219,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>selectByP</find>
+      <find>selec</find>
+      <find>select</find>
       <find>selectByPrimaryKey</find>
     </findStrings>
   </component>
@@ -275,20 +251,26 @@
         <option value="$PROJECT_DIR$/peppa-biz/src/main/java/service/impl/UserInfoServiceImpl.java" />
         <option value="$PROJECT_DIR$/peppa-biz/src/main/java/repository/UserRepository.java" />
         <option value="$PROJECT_DIR$/peppa-api/pom.xml" />
-        <option value="$PROJECT_DIR$/peppa-dao/src/main/resources/generatorConfig.xml" />
-        <option value="$PROJECT_DIR$/peppa-dao/src/main/java/dao/UserDOMapper.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/peppa-biz/src/main/java/peppa/user/service/UserInfoService.java" />
-        <option value="$PROJECT_DIR$/peppa-biz/src/main/java/peppa/user/service/impl/UserInfoServiceImpl.java" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/PeppaApplication (1).http" />
-        <option value="$PROJECT_DIR$/peppa-api/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/peppa-api/src/main/java/PeppaPig/PeppaApplication.java" />
-        <option value="$PROJECT_DIR$/peppa-biz/src/main/java/peppa/user/repository/UserRepository.java" />
-        <option value="$PROJECT_DIR$/peppa-dao/pom.xml" />
-        <option value="$PROJECT_DIR$/peppa-dao/src/main/resources/mapper/UserDOMapper.xml" />
         <option value="$PROJECT_DIR$/peppa-dao/src/main/resources/mapper/TestMapper.xml" />
         <option value="$PROJECT_DIR$/peppa-dao/src/main/java/dao/TestMapper.java" />
+        <option value="$PROJECT_DIR$/peppa-dao/src/main/java/dao/UserDOMapper.java" />
+        <option value="$PROJECT_DIR$/peppa-dao/src/main/resources/mybatisConfig.xml" />
+        <option value="$PROJECT_DIR$/peppa-dao/src/main/resources/generatorConfig.xml" />
+        <option value="$PROJECT_DIR$/peppa-biz/src/main/java/peppa/user/service/impl/UserInfoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/peppa-biz/src/main/java/peppa/user/service/UserInfoService.java" />
+        <option value="$PROJECT_DIR$/peppa-dao/src/main/resources/mapper/UserDOMapper.xml" />
+        <option value="$PROJECT_DIR$/peppa-dao/pom.xml" />
+        <option value="$PROJECT_DIR$/peppa-dao/src/main/java/com/peppa/dal/dao/UserDOMapper.java" />
         <option value="$PROJECT_DIR$/peppa-api/src/main/java/PeppaPig/controller/HelloController.java" />
+        <option value="$PROJECT_DIR$/peppa-dao/src/main/java/com/peppa/dal/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/peppa-api/src/main/resources/Hello.html" />
+        <option value="$PROJECT_DIR$/peppa-api/src/main/java/PeppaPig/PeppaApplication.java" />
+        <option value="$PROJECT_DIR$/peppa-api/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/peppa-biz/src/main/java/peppa/user/req/AddUserReq.java" />
+        <option value="$PROJECT_DIR$/peppa-api/src/main/java/PeppaPig/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/peppa-biz/src/main/java/peppa/user/repository/UserRepository.java" />
       </list>
     </option>
   </component>
@@ -315,42 +297,6 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="peppa" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="peppa" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="peppa-api" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="peppa-api" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="peppa-biz" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="peppa-biz" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="peppa-common" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="peppa-common" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="peppa-dao" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
@@ -358,27 +304,11 @@
           <item name="peppa-dao" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="peppa-dao" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="peppa-dao" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-          <item name="mybatis-generator" type="36feed69:MavenProjectsStructure$PluginNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="peppa-dao" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
       </expand>
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-9" />
     <option name="y" value="-9" />
     <option name="width" value="1938" />
@@ -507,44 +437,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="peppa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="peppa" type="462c0819:PsiDirectoryNode" />
-              <item name="peppa-biz" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="peppa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="peppa" type="462c0819:PsiDirectoryNode" />
-              <item name="peppa-common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="peppa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="peppa" type="462c0819:PsiDirectoryNode" />
-              <item name="peppa-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="peppa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="peppa" type="462c0819:PsiDirectoryNode" />
-              <item name="peppa-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="peppa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="peppa" type="462c0819:PsiDirectoryNode" />
-              <item name="peppa-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="req" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="peppa" type="b2602c69:ProjectViewProjectNode" />
@@ -579,6 +472,16 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="peppa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="peppa" type="462c0819:PsiDirectoryNode" />
+              <item name="peppa-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dal" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -587,24 +490,76 @@
               <item name="peppa-dao" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="peppa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="peppa" type="462c0819:PsiDirectoryNode" />
+              <item name="peppa-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="peppa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="peppa" type="462c0819:PsiDirectoryNode" />
+              <item name="peppa-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="peppa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="peppa" type="462c0819:PsiDirectoryNode" />
+              <item name="peppa-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="peppa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="peppa" type="462c0819:PsiDirectoryNode" />
+              <item name="peppa-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="peppa" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="peppa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="peppa" type="462c0819:PsiDirectoryNode" />
+              <item name="peppa-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="peppa" type="462c0819:PsiDirectoryNode" />
+              <item name="dal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="peppa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="peppa" type="462c0819:PsiDirectoryNode" />
+              <item name="peppa-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="peppa" type="462c0819:PsiDirectoryNode" />
+              <item name="dal" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="peppa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="peppa" type="462c0819:PsiDirectoryNode" />
+              <item name="peppa-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="peppa" type="462c0819:PsiDirectoryNode" />
+              <item name="dal" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="peppa" type="b2602c69:ProjectViewProjectNode" />
               <item name="peppa" type="462c0819:PsiDirectoryNode" />
               <item name="peppa-dao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="peppa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="peppa" type="462c0819:PsiDirectoryNode" />
-              <item name="peppa-dao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
               <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -616,15 +571,17 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelOrder2" value="2" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="SearchEverywhereHistoryKey" value="UserDOMapper&#9;FILE&#9;file://D:/projects/peppa/peppa-dao/src/main/resources/mapper/UserDOMapper.xml" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536229339197" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536308917090" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/peppa-dao/src/main/java/peppa/user/dao" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -633,6 +590,13 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="spring" />
     <property name="two.files.diff.last.used.folder" value="$PROJECT_DIR$/peppa-dao/src/main/java/peppa/user/dao" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\projects\peppa\peppa-dao\src\main\resources\mapper" />
+      <recent name="D:\projects\peppa\peppa-dao\src\main\java\com\peppa\dal\dao" />
+      <recent name="D:\projects\peppa\peppa-dao\src\main\java\dao" />
+    </key>
   </component>
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
@@ -701,7 +665,8 @@
       <workItem from="1536051631949" duration="5616000" />
       <workItem from="1536112244103" duration="24345000" />
       <workItem from="1536197286811" duration="18295000" />
-      <workItem from="1536223592250" duration="5633000" />
+      <workItem from="1536223592250" duration="7573000" />
+      <workItem from="1536285598617" duration="17179000" />
     </task>
     <task id="LOCAL-00001" summary="可以运行">
       <created>1536119033430</created>
@@ -763,7 +728,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53889000" />
+    <option name="totallyTimeSpent" value="73008000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -778,7 +743,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4964539" visible="true" weight="0.28150135" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4964539" visible="true" weight="0.23659517" />
       <window_info id="Structure" order="1" sideWeight="0.50212765" side_tool="true" weight="0.24396783" />
       <window_info id="Web" order="2" sideWeight="0.5035461" side_tool="true" weight="0.24396783" />
       <window_info id="Image Layers" order="3" />
@@ -786,10 +751,10 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Favorites" order="7" sideWeight="0.50212765" side_tool="true" weight="0.24396783" />
-      <window_info anchor="bottom" id="Run Dashboard" order="0" weight="0.7219858" />
+      <window_info anchor="bottom" id="Run Dashboard" order="0" weight="0.5517731" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32907802" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.45957446" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.6397163" />
       <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.49932975" weight="0.648227" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -809,7 +774,7 @@
       <window_info anchor="right" id="Database" order="5" weight="0.3297587" />
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="8" weight="0.19571045" />
+      <window_info anchor="right" id="Maven Projects" order="8" weight="0.46380696" />
       <window_info anchor="right" id="Bean Validation" order="9" weight="0.3297587" />
     </layout>
   </component>
@@ -851,44 +816,11 @@
     <MESSAGE value="修改一些BUG" />
     <option name="LAST_COMMIT_MESSAGE" value="修改一些BUG" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/peppa-biz/src/main/java/peppa/user/repository/UserRepository.java</url>
-          <line>25</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/peppa-api/src/main/java/PeppaApplication.java" />
-    <entry file="file://$PROJECT_DIR$/peppa-dao/src/main/java/model/User.java" />
-    <entry file="file://$PROJECT_DIR$/peppa-dao/src/main/java/model/Permission.java" />
-    <entry file="file://$PROJECT_DIR$/peppa-dao/src/main/java/model/Role.java" />
-    <entry file="file://$PROJECT_DIR$/peppa-dao/src/main/resources/testMappper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/peppa-common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.11.RELEASE/spring-beans-4.3.11.RELEASE.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="1092" selection-start-line="1092" selection-end-line="1092" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c5c138c7-a8ce-4f6d-a277-5d9c12007635/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -909,31 +841,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/peppa-biz/src/main/java/peppa/user/req/UserInfoReq.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/peppa-biz/src/main/java/peppa/user/resp/UserInfoResp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/peppa-biz/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/peppa-api/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="16" column="55" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
         </state>
       </provider>
     </entry>
@@ -972,20 +883,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/peppa-dao/src/main/java/model/UserDO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/peppa-dao/src/main/java/model/UserDOExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="113" column="35" selection-start-line="113" selection-start-column="35" selection-end-line="113" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/PeppaApplication (1).http">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -993,39 +890,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/peppa-dao/src/main/resources/generatorConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="44" column="67" selection-start-line="44" selection-start-column="67" selection-end-line="44" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/peppa-api/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/peppa-dao/target/maven-archiver/pom.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/peppa-dao/target/classes/generatorConfig.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/peppa-api/src/main/java/PeppaPig/PeppaApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/peppa-dao/target/classes/mapper/UserDOMapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/peppa-dao/target/maven-archiver/pom.properties" />
+    <entry file="file://$PROJECT_DIR$/peppa-dao/target/classes/generatorConfig.xml" />
     <entry file="file://$PROJECT_DIR$/peppa-dao/target/classes/dao/UserDOMapper.class">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1036,75 +902,275 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/peppa-biz/src/main/java/peppa/user/service/impl/UserInfoServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/peppa-dao/src/main/java/dao/TestMapper.xml" />
+    <entry file="file://$PROJECT_DIR$/peppa-dao/src/main/java/dao/TestMapper.java" />
+    <entry file="file://$PROJECT_DIR$/peppa-biz/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#879#880#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="306">
+          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/peppa-biz/src/main/java/peppa/user/repository/UserRepository.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis-spring/1.3.2/mybatis-spring-1.3.2.jar!/org/mybatis/spring/mapper/MapperFactoryBean.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+        <state relative-caret-position="425">
+          <caret line="34" column="23" lean-forward="true" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis-spring/1.3.2/mybatis-spring-1.3.2.jar!/org/mybatis/spring/annotation/MapperScan.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="38" column="62" lean-forward="true" selection-start-line="38" selection-start-column="62" selection-end-line="38" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/peppa-dao/src/main/java/model/UserDO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/peppa-dao/src/main/java/model/UserDOExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="113" column="35" selection-start-line="113" selection-start-column="35" selection-end-line="113" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/peppa-dao/src/main/resources/mybatisConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="53" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/peppa-dao/src/main/java/dao/UserDOMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/peppa-dao/src/main/java/com/peppa/dal/A.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/peppa-biz/src/main/java/peppa/user/service/UserInfoService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/peppa-dao/src/main/java/dao/UserDOMapper.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar!/org/apache/ibatis/binding/MapperMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="296" selection-start-line="296" selection-end-line="296" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/peppa-dao/src/main/java/com/peppa/dal/model/UserDOExample.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/peppa-dao/src/main/resources/mapper/UserDOMapper.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.20/tomcat-embed-core-8.5.20.jar!/org/apache/coyote/http11/Http11Processor.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="85" column="30" lean-forward="true" selection-start-line="85" selection-start-column="30" selection-end-line="85" selection-end-column="30" />
+        <state relative-caret-position="26">
+          <caret line="427" selection-start-line="427" selection-end-line="427" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/peppa-api/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="28" column="30" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/peppa-dao/target/classes/com/peppa/dal/model/UserDO.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#665#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/peppa-dao/target/classes/com/peppa/dal/model/UserDOExample.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-255">
+          <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#13114#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/peppa-dao/target/classes/com/peppa/dal/dao/UserDao.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#0#269#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/peppa-dao/src/main/java/com/peppa/dal/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/peppa-dao/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="50" column="19" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
+        <state relative-caret-position="271">
+          <caret line="52" column="34" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/peppa-dao/src/main/resources/mapper/TestMapper.xml">
+    <entry file="file://$PROJECT_DIR$/peppa-api/src/main/resources/Hello.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="26" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="26" />
+        <state relative-caret-position="153">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/peppa-dao/src/main/java/dao/TestMapper.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.20/tomcat-embed-core-8.5.20.jar!/org/apache/catalina/valves/ErrorReportValve.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+        <state relative-caret-position="66">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/peppa-dao/target/classes/com/peppa/dal/dao/UserDOMapper.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/peppa-dao/target/classes/mapper/UserDOMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="23" lean-forward="true" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/peppa-dao/src/main/resources/generatorConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="39" column="77" selection-start-line="39" selection-start-column="77" selection-end-line="39" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/peppa-api/src/main/java/PeppaPig/PeppaApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/peppa-dao/src/main/java/com/peppa/dal/model/UserDO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar!/org/apache/ibatis/binding/MapperProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/peppa-api/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/peppa-dao/src/main/resources/mapper/UserDOMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="62" selection-start-line="4" selection-start-column="62" selection-end-line="4" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/peppa-biz/src/main/java/peppa/user/service/impl/UserInfoServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#833#834#0" expanded="true" />
+            <element signature="e#893#894#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/peppa-dao/src/main/java/com/peppa/dal/dao/UserDOMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/peppa-biz/src/main/java/peppa/user/req/UserInfoReq.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/peppa-biz/src/main/java/peppa/user/req/AddUserReq.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/peppa-api/src/main/java/PeppaPig/controller/HelloController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="36" column="28" lean-forward="true" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+        <state relative-caret-position="526">
+          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1037#1038#0" expanded="true" />
-            <element signature="e#1098#1099#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/peppa-api/src/main/java/PeppaPig/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/peppa-biz/src/main/java/peppa/user/repository/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>

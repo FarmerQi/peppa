@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="dao.UserDOMapper">
-  <resultMap id="BaseResultMap" type="model.UserDO">
+<mapper namespace="com.peppa.dal.dao.UserDOMapper">
+
+  <resultMap id="BaseResultMap" type="com.peppa.dal.model.UserDO">
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="name" jdbcType="VARCHAR" property="name" />
     <result column="phone" jdbcType="VARCHAR" property="phone" />
   </resultMap>
+
   <sql id="Example_Where_Clause">
     <where>
       <foreach collection="oredCriteria" item="criteria" separator="or">
@@ -35,6 +37,7 @@
       </foreach>
     </where>
   </sql>
+
   <sql id="Update_By_Example_Where_Clause">
     <where>
       <foreach collection="example.oredCriteria" item="criteria" separator="or">
@@ -64,10 +67,12 @@
       </foreach>
     </where>
   </sql>
+
   <sql id="Base_Column_List">
     id, name, phone
   </sql>
-  <select id="selectByExample" parameterType="model.UserDOExample" resultMap="BaseResultMap">
+
+  <select id="selectByExample" parameterType="com.peppa.dal.model.UserDOExample" resultMap="BaseResultMap">
     select
     <if test="distinct">
       distinct
@@ -81,29 +86,34 @@
       order by ${orderByClause}
     </if>
   </select>
+
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
     from user
     where id = #{id,jdbcType=INTEGER}
   </select>
+
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from user
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <delete id="deleteByExample" parameterType="model.UserDOExample">
+
+  <delete id="deleteByExample" parameterType="com.peppa.dal.model.UserDOExample">
     delete from user
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="model.UserDO">
+
+  <insert id="insert" parameterType="com.peppa.dal.model.UserDO">
     insert into user (id, name, phone
       )
     values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{phone,jdbcType=VARCHAR}
       )
   </insert>
-  <insert id="insertSelective" parameterType="model.UserDO">
+
+  <insert id="insertSelective" parameterType="com.peppa.dal.model.UserDO">
     insert into user
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -128,7 +138,8 @@
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="model.UserDOExample" resultType="java.lang.Long">
+
+  <select id="countByExample" parameterType="com.peppa.dal.model.UserDOExample" resultType="java.lang.Long">
     select count(*) from user
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
@@ -151,6 +162,7 @@
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
+
   <update id="updateByExample" parameterType="map">
     update user
     set id = #{record.id,jdbcType=INTEGER},
@@ -160,7 +172,8 @@
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
-  <update id="updateByPrimaryKeySelective" parameterType="model.UserDO">
+
+  <update id="updateByPrimaryKeySelective" parameterType="com.peppa.dal.model.UserDO">
     update user
     <set>
       <if test="name != null">
@@ -172,7 +185,8 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="model.UserDO">
+
+  <update id="updateByPrimaryKey" parameterType="com.peppa.dal.model.UserDO">
     update user
     set name = #{name,jdbcType=VARCHAR},
       phone = #{phone,jdbcType=VARCHAR}

@@ -7,13 +7,13 @@
 package PeppaPig.controller;
 
 
-import dao.TestMapper;
-import dao.UserDOMapper;
-import model.UserDO;
+import com.peppa.dal.dao.UserDao;
+import com.peppa.dal.model.UserDO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import peppa.user.repository.UserRepository;
 import peppa.user.service.UserInfoService;
 
 /**
@@ -27,13 +27,17 @@ public class HelloController {
     @Autowired
     private UserInfoService userInfoService;
 
+    @Autowired
+    private UserRepository userRepository;
+
+    @Autowired
+    private UserDao userDao;
+
     @RequestMapping("/index")
     public String hello(){
         return "Hello 阿心！！！";
     }
-
-
-
+    
     @RequestMapping("/{id}")
     public UserDO findById(@PathVariable("id")Integer id){
         return userInfoService.selectByPrimaryKey(id);
@@ -46,5 +50,12 @@ public class HelloController {
         userDO.setName("阿心");
         userDO.setPhone("18328090104");
         return userDO;
+    }
+
+
+
+    @RequestMapping("count")
+    public int getCount(){
+        return userDao.count();
     }
 }
