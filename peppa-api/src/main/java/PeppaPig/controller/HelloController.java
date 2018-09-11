@@ -32,7 +32,8 @@ public class HelloController {
     
     @RequestMapping("/{id}")
     public UserDO findById(@PathVariable("id")Integer id){
-        return userService.selectByPrimaryKey(id);
+        UserDO user = userService.selectByPrimaryKey(id);
+        return user;
     }
 
 

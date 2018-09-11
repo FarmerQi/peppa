@@ -5,6 +5,8 @@ package com.peppa.common;/* Copyright 2018 tuhu.cn All right reserved. This soft
  * into with Tuhu.cn
  */
 
+import lombok.Data;
+
 import java.io.Serializable;
 import java.util.List;
 
@@ -12,6 +14,7 @@ import java.util.List;
  * @Auther: qixin
  * @Date: 2018/09/05 17:19
  */
+@Data
 public class Page<T> implements Serializable {
     private static final long serialVersionUID = 6381688311514987560L;
 
@@ -35,35 +38,4 @@ public class Page<T> implements Serializable {
      */
     private List<T> dataList;
 
-    public Integer getStart() {
-        return start;
-    }
-
-    public void setStart(Integer start) {
-        this.start = start;
-    }
-
-    public Integer getPageSize() {
-        return pageSize;
-    }
-
-    public void setPageSize(Integer pageSize) {
-        this.pageSize = pageSize;
-    }
-
-    public Integer getTotalSize() {
-        return totalSize;
-    }
-
-    public void setTotalSize(Integer totalSize) {
-        this.totalSize = totalSize;
-    }
-
-    public List<T> getDataList() {
-        return dataList;
-    }
-
-    public void setDataList(List<T> dataList) {
-        this.dataList = dataList;
-    }
 }

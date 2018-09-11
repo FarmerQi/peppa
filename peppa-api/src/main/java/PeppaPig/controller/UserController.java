@@ -34,5 +34,12 @@ public class UserController {
         return result;
     }
 
+    @RequestMapping("count")
+    public Integer getCount(){
+        Integer count = 0;
+        count = userService.getCount();
+        return count;
+    }
+
 
 }

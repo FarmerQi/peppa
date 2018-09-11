@@ -7,7 +7,6 @@
 package peppa.user.service;
 
 import com.peppa.dal.model.UserDO;
-import peppa.user.req.AddUserReq;
 
 /**
  * @Auther: qixin
@@ -18,4 +17,6 @@ public interface UserService {
     UserDO selectByPrimaryKey(Integer id);
 
     String addUser(UserDO user);
+
+    Integer getCount();
 }

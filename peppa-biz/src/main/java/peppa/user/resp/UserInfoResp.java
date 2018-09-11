@@ -6,9 +6,15 @@
  */
 package peppa.user.resp;
 
+import lombok.Data;
+
 /**
  * @Auther: qixin
  * @Date: 2018/09/05 17:59
  */
+@Data
 public class UserInfoResp {
+    Integer id;
+    String name;
+    String phoneNum;
 }

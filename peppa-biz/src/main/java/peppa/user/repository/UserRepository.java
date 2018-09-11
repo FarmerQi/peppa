@@ -24,11 +24,24 @@ public class UserRepository {
     @Autowired
     private UserDOMapper userDOMapper;
 
+    /**
+     * 根据用户ID查找用户
+     * @param id
+     * @return
+     */
     public UserDO selectByPrimaryKey(Integer id){
-        return userDOMapper.selectByPrimaryKey(id);
+        UserDO userDO = userDOMapper.selectByPrimaryKey(id);
+        if (userDO==null){
+            return null;
+        }
+        return userDO;
     }
 
 
+    /**
+     * 查找记录总数
+     * @return
+     */
     public Integer count(){
         UserDOExample example = new UserDOExample();
         int result = 0;

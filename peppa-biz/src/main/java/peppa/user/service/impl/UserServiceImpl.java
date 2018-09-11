@@ -11,7 +11,6 @@ import com.peppa.dal.model.UserDO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import peppa.user.repository.UserRepository;
-import peppa.user.req.AddUserReq;
 import peppa.user.service.UserService;
 
 /**
@@ -33,6 +32,11 @@ public class UserServiceImpl implements UserService {
     @Override
     public String addUser(UserDO user) {
         return userRepository.addUser(user);
+    }
+
+    @Override
+    public Integer getCount() {
+        return userRepository.count();
     }
 
 

@@ -3,11 +3,8 @@ package com.peppa.dal.dao;
 import com.peppa.dal.model.UserDO;
 import com.peppa.dal.model.UserDOExample;
 import java.util.List;
-
-import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
-@Mapper
 public interface UserDOMapper {
     long countByExample(UserDOExample example);
 
@@ -20,7 +17,6 @@ public interface UserDOMapper {
     int insertSelective(UserDO record);
 
     List<UserDO> selectByExample(UserDOExample example);
-
 
     UserDO selectByPrimaryKey(Integer id);
 
