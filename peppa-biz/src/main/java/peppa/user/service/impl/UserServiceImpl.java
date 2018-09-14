@@ -38,6 +38,4 @@ public class UserServiceImpl implements UserService {
     public Integer getCount() {
         return userRepository.count();
     }
-
-
 }

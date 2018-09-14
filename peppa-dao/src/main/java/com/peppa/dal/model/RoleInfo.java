@@ -4,22 +4,24 @@
  * use it only in accordance with the terms of the license agreement you entered
  * into with Tuhu.cn
  */
-package peppa.user.service;
+package com.peppa.dal.model;
 
-import com.peppa.dal.model.UserDO;
-import com.peppa.dal.model.UserInfo;
+import lombok.Data;
+
+import java.util.List;
 
 /**
  * @Auther: qixin
- * @Date: 2018/09/05 18:00
+ * @Date: 2018/09/12 17:02
  */
-public interface UserService {
+@Data
+public class RoleInfo {
+    private Integer roleId;
 
-    UserDO selectByPrimaryKey(Integer id);
+    private String roleName;
 
-    String addUser(UserDO user);
+    private String description;
 
-    Integer getCount();
-
-
+    private Integer roleAvailable;
+    private List<PermissionDO> permissionDOList;
 }

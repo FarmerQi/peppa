@@ -76,7 +76,7 @@
       distinct
     </if>
     <include refid="Base_Column_List" />
-    from permission
+    from permissionId
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
@@ -87,21 +87,21 @@
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
-    from permission
+    from permissionId
     where id = #{id,jdbcType=INTEGER}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
-    delete from permission
+    delete from permissionId
     where id = #{id,jdbcType=INTEGER}
   </delete>
   <delete id="deleteByExample" parameterType="com.peppa.dal.model.PermissionDOExample">
-    delete from permission
+    delete from permissionId
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
   <insert id="insert" parameterType="com.peppa.dal.model.PermissionDO">
-    insert into permission (id, name, url, 
+    insert into permissionId (id, name, url,
       method, desc, available
       )
     values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{url,jdbcType=VARCHAR}, 
@@ -109,7 +109,7 @@
       )
   </insert>
   <insert id="insertSelective" parameterType="com.peppa.dal.model.PermissionDO">
-    insert into permission
+    insert into permissionId
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
         id,
@@ -152,13 +152,13 @@
     </trim>
   </insert>
   <select id="countByExample" parameterType="com.peppa.dal.model.PermissionDOExample" resultType="java.lang.Long">
-    select count(*) from permission
+    select count(*) from permissionId
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </select>
   <update id="updateByExampleSelective" parameterType="map">
-    update permission
+    update permissionId
     <set>
       <if test="record.id != null">
         id = #{record.id,jdbcType=INTEGER},
@@ -184,7 +184,7 @@
     </if>
   </update>
   <update id="updateByExample" parameterType="map">
-    update permission
+    update permissionId
     set id = #{record.id,jdbcType=INTEGER},
       name = #{record.name,jdbcType=VARCHAR},
       url = #{record.url,jdbcType=VARCHAR},
@@ -196,7 +196,7 @@
     </if>
   </update>
   <update id="updateByPrimaryKeySelective" parameterType="com.peppa.dal.model.PermissionDO">
-    update permission
+    update permissionId
     <set>
       <if test="name != null">
         name = #{name,jdbcType=VARCHAR},
@@ -217,7 +217,7 @@
     where id = #{id,jdbcType=INTEGER}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.peppa.dal.model.PermissionDO">
-    update permission
+    update permissionId
     set name = #{name,jdbcType=VARCHAR},
       url = #{url,jdbcType=VARCHAR},
       method = #{method,jdbcType=VARCHAR},

@@ -6,12 +6,14 @@
  */
 package peppa.user.repository;
 
-import com.peppa.dal.dao.UserDOMapper;
-import com.peppa.dal.model.UserDO;
-import com.peppa.dal.model.UserDOExample;
+import com.peppa.dal.dao.*;
+import com.peppa.dal.model.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
+import java.util.Map;
 
 
 /**
@@ -24,6 +26,17 @@ public class UserRepository {
     @Autowired
     private UserDOMapper userDOMapper;
 
+    @Autowired
+    private UserRoleDOMapper userRoleDOMapper;
+
+    @Autowired
+    private RoleDOMapper roleDOMapper;
+
+    @Autowired
+    private RolePermissionDOMapper rolePermissionDOMapper;
+
+    @Autowired
+    private PermissionDOMapper permissionDOMapper;
     /**
      * 根据用户ID查找用户
      * @param id
@@ -57,6 +70,31 @@ public class UserRepository {
         }else {
             return "添加失败";
         }
+    }
+
+//    public List<RolePermissionDO> getUserInfoByID(Integer id){
+//        UserInfo userInfo = new UserInfo();
+//        RoleInfo roleInfo = new RoleInfo();
+//
+//
+//        UserDO userDO = userDOMapper.selectByPrimaryKey(id);
+//        userInfo.setUserDO(userDO);
+//
+//        //获取所有的角色
+//        UserRoleDOExample userRoleDOExample = new UserRoleDOExample();
+//        userRoleDOExample.createCriteria().andUserIdEqualTo(id);
+//        List<UserRoleDO> userRoleDOList = userRoleDOMapper.selectByExample(userRoleDOExample);
+//        List<RoleDO> roleDOS = roleDOMapper.selectRoles(userRoleDOList);
+//        //将role 和 permission 映射为 map
+//        List<RolePermissionDO> rolePermissionDOS = rolePermissionDOMapper.selectRolePermissions(roleDOS);
+//
+//        return rolePermissionDOS;
+//    }
+
+
+    public UserInfo selectUserInfoByUserID(Integer id){
+        UserInfo userInfo = userDOMapper.selectUserInfoByUserID(id);
+        return userInfo;
     }
 
 

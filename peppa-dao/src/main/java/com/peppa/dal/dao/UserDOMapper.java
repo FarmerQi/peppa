@@ -3,6 +3,7 @@ package com.peppa.dal.dao;
 import com.peppa.dal.model.UserDO;
 import com.peppa.dal.model.UserDOExample;
 import java.util.List;
+import com.peppa.dal.model.UserInfo;
 import org.apache.ibatis.annotations.Param;
 
 public interface UserDOMapper {
@@ -27,4 +28,7 @@ public interface UserDOMapper {
     int updateByPrimaryKeySelective(UserDO record);
 
     int updateByPrimaryKey(UserDO record);
+
+    UserInfo selectUserInfoByUserID(Integer id);
+
 }

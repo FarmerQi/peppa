@@ -82,6 +82,16 @@
       order by ${orderByClause}
     </if>
   </select>
+  
+  <select id="selectRoles" parameterType="java.util.List" resultMap="BaseResultMap">
+    select * from role where role.id in
+    <foreach collection="list" item="userRoleDO" open="(" separator="," close=")">
+      #{userRoleDO.roleId}
+    </foreach>
+  </select>
+  
+  
+  
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />

@@ -7,11 +7,10 @@
 package PeppaPig.controller;
 
 import com.peppa.dal.model.UserDO;
+import com.peppa.dal.model.UserInfo;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+import peppa.user.repository.UserRepository;
 import peppa.user.req.AddUserReq;
 import peppa.user.service.UserService;
 
@@ -24,6 +23,9 @@ import peppa.user.service.UserService;
 public class UserController {
     @Autowired
     private UserService userService;
+
+    @Autowired
+    private UserRepository userRepository;
 
     @RequestMapping(value = "add",method = RequestMethod.POST)
     public String addUser(@RequestBody AddUserReq req){
@@ -41,5 +43,10 @@ public class UserController {
         return count;
     }
 
+    @RequestMapping("/admin/{id}")
+    public UserInfo selectUserInfoByUserID(@PathVariable("id")Integer id){
+        UserInfo userInfos = userRepository.selectUserInfoByUserID(id);
+        return userInfos;
+    }
 
 }

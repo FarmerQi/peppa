@@ -1,5 +1,6 @@
 package com.peppa.dal.dao;
 
+import com.peppa.dal.model.RoleDO;
 import com.peppa.dal.model.UserRoleDO;
 import com.peppa.dal.model.UserRoleDOExample;
 import java.util.List;
@@ -27,4 +28,6 @@ public interface UserRoleDOMapper {
     int updateByPrimaryKeySelective(UserRoleDO record);
 
     int updateByPrimaryKey(UserRoleDO record);
+
+
 }

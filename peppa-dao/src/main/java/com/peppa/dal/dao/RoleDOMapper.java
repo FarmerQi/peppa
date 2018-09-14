@@ -3,6 +3,8 @@ package com.peppa.dal.dao;
 import com.peppa.dal.model.RoleDO;
 import com.peppa.dal.model.RoleDOExample;
 import java.util.List;
+
+import com.peppa.dal.model.UserRoleDO;
 import org.apache.ibatis.annotations.Param;
 
 public interface RoleDOMapper {
@@ -27,4 +29,6 @@ public interface RoleDOMapper {
     int updateByPrimaryKeySelective(RoleDO record);
 
     int updateByPrimaryKey(RoleDO record);
+
+    List<RoleDO> selectRoles(List<UserRoleDO> userRoleDOList);
 }

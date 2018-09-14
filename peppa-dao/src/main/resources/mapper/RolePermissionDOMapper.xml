@@ -4,7 +4,7 @@
   <resultMap id="BaseResultMap" type="com.peppa.dal.model.RolePermissionDO">
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="role_id" jdbcType="INTEGER" property="roleId" />
-    <result column="permission" jdbcType="INTEGER" property="permission" />
+    <result column="permission_Id" jdbcType="INTEGER" property="permissionId" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -65,8 +65,17 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    id, role_id, permission
+    id, role_id, permissionId
   </sql>
+
+  <select id="selectRolePermissions" parameterType="java.util.List" resultMap="BaseResultMap">
+    select * from role_permission where role_permission.role_id in
+    <foreach collection="list" item="role" open="(" separator="," close=")">
+    #{role.id}
+    </foreach>
+  </select>
+
+
   <select id="selectByExample" parameterType="com.peppa.dal.model.RolePermissionDOExample" resultMap="BaseResultMap">
     select
     <if test="distinct">
@@ -98,9 +107,9 @@
     </if>
   </delete>
   <insert id="insert" parameterType="com.peppa.dal.model.RolePermissionDO">
-    insert into role_permission (id, role_id, permission
+    insert into role_permission (id, role_id, permissionId
       )
-    values (#{id,jdbcType=INTEGER}, #{roleId,jdbcType=INTEGER}, #{permission,jdbcType=INTEGER}
+    values (#{id,jdbcType=INTEGER}, #{roleId,jdbcType=INTEGER}, #{permissionId,jdbcType=INTEGER}
       )
   </insert>
   <insert id="insertSelective" parameterType="com.peppa.dal.model.RolePermissionDO">
@@ -112,8 +121,8 @@
       <if test="roleId != null">
         role_id,
       </if>
-      <if test="permission != null">
-        permission,
+      <if test="permissionId != null">
+        permissionId,
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
@@ -123,8 +132,8 @@
       <if test="roleId != null">
         #{roleId,jdbcType=INTEGER},
       </if>
-      <if test="permission != null">
-        #{permission,jdbcType=INTEGER},
+      <if test="permissionId != null">
+        #{permissionId,jdbcType=INTEGER},
       </if>
     </trim>
   </insert>
@@ -143,8 +152,8 @@
       <if test="record.roleId != null">
         role_id = #{record.roleId,jdbcType=INTEGER},
       </if>
-      <if test="record.permission != null">
-        permission = #{record.permission,jdbcType=INTEGER},
+      <if test="record.permissionId != null">
+        permissionId = #{record.permissionId,jdbcType=INTEGER},
       </if>
     </set>
     <if test="_parameter != null">
@@ -155,7 +164,7 @@
     update role_permission
     set id = #{record.id,jdbcType=INTEGER},
       role_id = #{record.roleId,jdbcType=INTEGER},
-      permission = #{record.permission,jdbcType=INTEGER}
+      permissionId = #{record.permissionId,jdbcType=INTEGER}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -166,8 +175,8 @@
       <if test="roleId != null">
         role_id = #{roleId,jdbcType=INTEGER},
       </if>
-      <if test="permission != null">
-        permission = #{permission,jdbcType=INTEGER},
+      <if test="permissionId != null">
+        permissionId = #{permissionId,jdbcType=INTEGER},
       </if>
     </set>
     where id = #{id,jdbcType=INTEGER}
@@ -175,7 +184,7 @@
   <update id="updateByPrimaryKey" parameterType="com.peppa.dal.model.RolePermissionDO">
     update role_permission
     set role_id = #{roleId,jdbcType=INTEGER},
-      permission = #{permission,jdbcType=INTEGER}
+      permissionId = #{permissionId,jdbcType=INTEGER}
     where id = #{id,jdbcType=INTEGER}
   </update>
 </mapper>

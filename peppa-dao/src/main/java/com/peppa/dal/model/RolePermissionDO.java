@@ -5,7 +5,7 @@ public class RolePermissionDO {
 
     private Integer roleId;
 
-    private Integer permission;
+    private Integer permissionId;
 
     public Integer getId() {
         return id;
@@ -23,11 +23,11 @@ public class RolePermissionDO {
         this.roleId = roleId;
     }
 
-    public Integer getPermission() {
-        return permission;
+    public Integer getPermissionId() {
+        return permissionId;
     }
 
-    public void setPermission(Integer permission) {
-        this.permission = permission;
+    public void setPermissionId(Integer permissionId) {
+        this.permissionId = permissionId;
     }
 }
