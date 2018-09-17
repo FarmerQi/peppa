@@ -4,22 +4,16 @@
  * use it only in accordance with the terms of the license agreement you entered
  * into with Tuhu.cn
  */
-package peppa.user.service;
+package peppa.user.req;
 
-import com.peppa.dal.model.UserDO;
-import com.peppa.dal.model.UserInfo;
+import lombok.Data;
 
 /**
  * @Auther: qixin
- * @Date: 2018/09/05 18:00
+ * @Date: 2018/09/17 13:55
  */
-public interface UserService {
-
-    UserDO selectByPrimaryKey(Integer id);
-
-    String addUser(UserDO user);
-
-    Integer getCount();
-
-    UserInfo selectUserInfoByUserPhoneNum(String phoneNum,String password);
+@Data
+public class LoginReq {
+    private String userPhone;
+    private String password;
 }

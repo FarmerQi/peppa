@@ -92,8 +92,8 @@ public class UserRepository {
 //    }
 
 
-    public UserInfo selectUserInfoByUserPhone(String phoneNum){
-        UserInfo userInfo = userDOMapper.selectUserInfoByUserPhone(phoneNum);
+    public UserInfo selectUserInfoByUserPhone(String phoneNum ,String password){
+        UserInfo userInfo = userDOMapper.selectUserInfoByUserPhone(phoneNum,password);
         return userInfo;
     }
 

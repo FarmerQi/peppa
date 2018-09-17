@@ -10,6 +10,8 @@ import com.peppa.dal.model.PermissionDO;
 import com.peppa.dal.model.RoleDO;
 import com.peppa.dal.model.RoleInfo;
 import com.peppa.dal.model.UserInfo;
+import org.apache.commons.lang3.CharUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.AuthenticationInfo;
 import org.apache.shiro.authc.AuthenticationToken;
@@ -20,6 +22,8 @@ import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
 import org.springframework.beans.factory.annotation.Autowired;
 import peppa.user.service.UserService;
+
+import java.util.Arrays;
 
 /**
  * @Auther: qixin
@@ -47,13 +51,18 @@ public class MyShiroRealm extends AuthorizingRealm {
 
     @Override
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken authenticationToken) throws AuthenticationException {
+
         //获取用户的账号
         String userPhone = (String)authenticationToken.getPrincipal();
-        UserInfo userInfo = userService.selectUserInfoByUserPhoneNum(userPhone);
+        char[] password = (char[])authenticationToken.getCredentials();
+        String psw = String.valueOf(password);
+        UserInfo userInfo = userService.selectUserInfoByUserPhoneNum(userPhone,psw);
         if (userInfo == null){
             return null;
         }
         SimpleAuthenticationInfo authenticationInfo = new SimpleAuthenticationInfo(userInfo,userInfo.getPassword(),getName());
         return authenticationInfo;
     }
+
+
 }

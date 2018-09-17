@@ -41,8 +41,8 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public UserInfo selectUserInfoByUserPhoneNum(String phoneNum) {
-        return userRepository.selectUserInfoByUserPhone(phoneNum);
+    public UserInfo selectUserInfoByUserPhoneNum(String phoneNum,String password) {
+        return userRepository.selectUserInfoByUserPhone(phoneNum,password);
     }
 
 }

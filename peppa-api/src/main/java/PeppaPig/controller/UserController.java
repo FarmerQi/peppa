@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import peppa.user.repository.UserRepository;
 import peppa.user.req.AddUserReq;
+import peppa.user.req.LoginReq;
 import peppa.user.service.UserService;
 
 /**
@@ -43,9 +44,9 @@ public class UserController {
         return count;
     }
 
-    @RequestMapping("/admin/{phoneNum}")
-    public UserInfo selectUserInfoByUserID(@PathVariable("phoneNum")String phoneNum){
-        UserInfo userInfo = userService.selectUserInfoByUserPhoneNum(phoneNum);
+    @RequestMapping(value = "/admin",method = RequestMethod.POST)
+    public UserInfo selectUserInfoByUserID(@RequestBody LoginReq req){
+        UserInfo userInfo = userService.selectUserInfoByUserPhoneNum(req.getUserPhone(),req.getPassword());
         return userInfo;
     }
 

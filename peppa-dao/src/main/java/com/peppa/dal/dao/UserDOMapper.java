@@ -29,6 +29,6 @@ public interface UserDOMapper {
 
     int updateByPrimaryKey(UserDO record);
 
-    UserInfo selectUserInfoByUserPhone(String phoneNum);
+    UserInfo selectUserInfoByUserPhone(@Param("phone") String phoneNum,@Param("password")String password);
 
 }
