@@ -8,6 +8,7 @@ package peppa.user.service.impl;
 
 
 import com.peppa.dal.model.UserDO;
+import com.peppa.dal.model.UserInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import peppa.user.repository.UserRepository;
@@ -38,4 +39,10 @@ public class UserServiceImpl implements UserService {
     public Integer getCount() {
         return userRepository.count();
     }
+
+    @Override
+    public UserInfo selectUserInfoByUserPhoneNum(String phoneNum) {
+        return userRepository.selectUserInfoByUserPhone(phoneNum);
+    }
+
 }

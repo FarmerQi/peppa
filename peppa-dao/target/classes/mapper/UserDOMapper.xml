@@ -104,7 +104,7 @@
   </sql>
 
 
-  <select id="selectUserInfoByUserID" parameterType="java.lang.Integer" resultMap="BaseUserInfoResultMap">
+  <select id="selectUserInfoByUserPhone" parameterType="java.lang.String" resultMap="BaseUserInfoResultMap">
         select
         user.id as userId,user.name as userName,user.phone,user.salt,user.state,user.password,
         role.id as roleId,role.name as roleName,role.description,role.available as roleAvailable,
@@ -112,7 +112,7 @@
         permission.method,permission.`desc`,permission.available as permissionAvailable
         from user,role,permission,user_role,role_permission
         where
-        user.id = #{id,javaType=INTEGER} and  user.id = user_role.user_id and role.id = user_role.role_id
+        user.phone = #{phone,javaType=STRING} and  user.id = user_role.user_id and role.id = user_role.role_id
         and role.id = role_permission.role_id and permission.id = role_permission.permission_id;
   </select>
 

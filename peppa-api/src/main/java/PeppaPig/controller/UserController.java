@@ -43,10 +43,10 @@ public class UserController {
         return count;
     }
 
-    @RequestMapping("/admin/{id}")
-    public UserInfo selectUserInfoByUserID(@PathVariable("id")Integer id){
-        UserInfo userInfos = userRepository.selectUserInfoByUserID(id);
-        return userInfos;
+    @RequestMapping("/admin/{phoneNum}")
+    public UserInfo selectUserInfoByUserID(@PathVariable("phoneNum")String phoneNum){
+        UserInfo userInfo = userService.selectUserInfoByUserPhoneNum(phoneNum);
+        return userInfo;
     }
 
 }

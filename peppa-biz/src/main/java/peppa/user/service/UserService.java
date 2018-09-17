@@ -21,5 +21,5 @@ public interface UserService {
 
     Integer getCount();
 
-
+    UserInfo selectUserInfoByUserPhoneNum(String phoneNum);
 }

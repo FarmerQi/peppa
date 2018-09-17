@@ -47,7 +47,7 @@ public class HelloController {
     }
 //
 //    @RequestMapping("/admin/{id}")
-//    public List<RolePermissionDO> selectUserInfoByUserID(@PathVariable("id")Integer id){
+//    public List<RolePermissionDO> selectUserInfoByUserPhone(@PathVariable("id")Integer id){
 //        List<RolePermissionDO> userInfo = userRepository.getUserInfoByID(id);
 //        return userInfo;
 //    }
