@@ -6,12 +6,7 @@
  */
 package PeppaPig.controller;
 
-
-import com.peppa.dal.model.RolePermissionDO;
 import com.peppa.dal.model.UserDO;
-import com.peppa.dal.model.UserInfo;
-import org.apache.shiro.authc.IncorrectCredentialsException;
-import org.apache.shiro.authc.UnknownAccountException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,9 +14,6 @@ import org.springframework.web.bind.annotation.RestController;
 import peppa.user.repository.UserRepository;
 import peppa.user.service.UserService;
 
-import javax.servlet.http.HttpServletRequest;
-import java.util.List;
-import java.util.Map;
 
 /**
  * @Auther: qixin

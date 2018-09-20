@@ -23,5 +23,7 @@ import org.springframework.context.annotation.ComponentScan;
 public class PeppaApplication {
     public static void main(String[] args){
         SpringApplication.run(PeppaApplication.class,args);
+
     }
+
 }

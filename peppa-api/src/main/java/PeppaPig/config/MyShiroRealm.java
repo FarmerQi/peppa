@@ -7,11 +7,8 @@
 package PeppaPig.config;
 
 import com.peppa.dal.model.PermissionDO;
-import com.peppa.dal.model.RoleDO;
 import com.peppa.dal.model.RoleInfo;
 import com.peppa.dal.model.UserInfo;
-import org.apache.commons.lang3.CharUtils;
-import org.apache.commons.lang3.StringUtils;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.AuthenticationInfo;
 import org.apache.shiro.authc.AuthenticationToken;
@@ -22,8 +19,6 @@ import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
 import org.springframework.beans.factory.annotation.Autowired;
 import peppa.user.service.UserService;
-
-import java.util.Arrays;
 
 /**
  * @Auther: qixin
