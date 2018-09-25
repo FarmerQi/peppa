@@ -7,6 +7,8 @@
 package PeppaPig.controller;
 
 import com.peppa.dal.model.UserDO;
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,8 +21,9 @@ import peppa.user.service.UserService;
  * @Auther: qixin
  * @Date: 2018/09/05 11:40
  */
+
 @RestController
-@RequestMapping("demo")
+@RequestMapping("user")
 public class HelloController {
 
     @Autowired
@@ -39,6 +42,13 @@ public class HelloController {
         String demo ;
         UserDO user = userService.selectByPrimaryKey(id);
         return user;
+    }
+
+    @RequestMapping("logout")
+    public String logout(){
+        Subject subject = SecurityUtils.getSubject();
+        subject.logout();
+        return "已退出";
     }
 //
 //    @RequestMapping("/admin/{id}")

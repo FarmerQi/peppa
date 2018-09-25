@@ -49,9 +49,10 @@ public class MyShiroRealm extends AuthorizingRealm {
 
         //获取用户的账号
         String userPhone = (String)authenticationToken.getPrincipal();
-        char[] password = (char[])authenticationToken.getCredentials();
-        String psw = String.valueOf(password);
-        UserInfo userInfo = userService.selectUserInfoByUserPhoneNum(userPhone,psw);
+        String psw = String.valueOf((char[])authenticationToken.getCredentials());
+        UserInfo userInfo = new UserInfo();
+        userInfo = userService.selectUserInfoByUserPhoneNum(userPhone,psw);
+
         if (userInfo == null){
             return null;
         }

@@ -6,23 +6,15 @@
  */
 package PeppaPig.config;
 
-import org.apache.shiro.mgt.SecurityManager;
-import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
-import org.apache.shiro.web.mgt.DefaultWebSecurityManager;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.servlet.config.annotation.CorsRegistration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
-import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
-
-import java.util.LinkedHashMap;
-import java.util.Map;
 
 /**
  * @Auther: qixin
  * @Date: 2018/09/14 16:39
+ * 解决跨域请求中出现的问题
  */
 @ComponentScan
 @Configuration

@@ -14,27 +14,14 @@
 
 <button id="demo" type="button">登陆</button>
 <div id="result">Result</div>
+<form action="/sign" method="post" enctype="multipart/form-data">
+    <input name="userPhone" type="text">
+    <input name="password" type="password">
+    <input name="submit" type="submit">
+</form>
+
 <script>
-    $(function () {
-        $("#demo").click(function () {
-            $.ajax({
-                type:"POST",
-                url:"http://127.0.0.1:8080/sign",
-                contentType:"application/json; charset=utf-8",
-             //   dataType:"jsonp",
-                data:JSON.stringify({
-                    "userPhone":"18328090104",
-                    "password":"12"
-                }),
-                success:function (message) {
-                    alert("success:" + JSON.stringify(message))
-                },
-                error:function (message) {
-                    alert("fail:" + JSON.stringify(message))
-                }
-            })
-        });
-    })
+
 </script>
 </body>
 </html>

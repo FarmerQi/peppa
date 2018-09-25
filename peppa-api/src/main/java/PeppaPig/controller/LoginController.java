@@ -6,6 +6,7 @@
  */
 package PeppaPig.controller;
 
+import netscape.javascript.JSObject;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.AuthenticationToken;
@@ -13,12 +14,13 @@ import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.mgt.SecurityManager;
 import org.apache.shiro.subject.Subject;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import peppa.user.req.LoginReq;
 
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.websocket.Session;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -32,15 +34,33 @@ public class LoginController {
 
     @RequestMapping(value = "/sign",method = RequestMethod.POST)
     @ResponseBody
-    public Map login(@RequestBody LoginReq req){
+    public Map login(
+            @RequestParam(value = "userPhone")String userPhone,
+            @RequestParam(value = "password")String password,
+            HttpServletRequest request, HttpServletResponse response){
+
         Map result = new HashMap<>();
         try {
             UsernamePasswordToken token = new UsernamePasswordToken();
-            token.setUsername(req.getUserPhone());
-            token.setPassword(req.getPassword().toCharArray());
-            SecurityUtils.getSubject().login(token);
+            token.setUsername(userPhone);
+            token.setPassword(password.toCharArray());
+
+            Subject subject = SecurityUtils.getSubject();
+            subject.login(token);
+
+            Boolean state = subject.hasRole("admin");
+            String sessionId = (String) request.getSession().getId();
+            System.out.println("--------------sessionId: " + sessionId);
+            Cookie cookie = new Cookie("Hello",sessionId);
+
+            response.addCookie(cookie);
+            System.out.println(cookie.getValue());
+            //subject.checkPermission("addUser");
+            System.out.println("----拥有Admin角色----" + state);
+
             result.put("status",200);
             result.put("message","登陆成功");
+
 
         }catch (AuthenticationException e){
             e.printStackTrace();

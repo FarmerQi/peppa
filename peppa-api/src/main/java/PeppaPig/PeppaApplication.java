@@ -9,6 +9,7 @@ package PeppaPig;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.context.annotation.ComponentScan;
 
 /**
@@ -19,7 +20,7 @@ import org.springframework.context.annotation.ComponentScan;
 @SpringBootApplication
 @ComponentScan(basePackages = {"peppa","PeppaPig"})
 @MapperScan(value = {"com.peppa.dal.dao"})
-
+@ServletComponentScan
 public class PeppaApplication {
     public static void main(String[] args){
         SpringApplication.run(PeppaApplication.class,args);
