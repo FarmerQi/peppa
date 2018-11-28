@@ -19,13 +19,17 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 @ComponentScan
 @Configuration
 public class CORSConfig extends WebMvcConfigurerAdapter {
-
+    //重写父类提供的跨域请求处理接口
     @Override
     public void addCorsMappings(CorsRegistry registry) {
+        //添加映射路径
         registry.addMapping("/**")
-                .allowedOrigins("*")
+                //放行的原始域名
+                .allowedOrigins("http://localhost:8080")
+                //放行的原始域的请求方法
                 .allowedMethods("POST", "GET", "PUT", "OPTIONS", "DELETE")
                 .maxAge(3600)
+                //是否发送cookie
                 .allowCredentials(true);
     }
 }
