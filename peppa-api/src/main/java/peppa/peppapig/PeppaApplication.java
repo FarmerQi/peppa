@@ -4,7 +4,7 @@
  * use it only in accordance with the terms of the license agreement you entered
  * into with Tuhu.cn
  */
-package PeppaPig;
+package peppa.peppapig;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
@@ -18,7 +18,7 @@ import org.springframework.context.annotation.ComponentScan;
  */
 
 @SpringBootApplication
-@ComponentScan(basePackages = {"peppa","PeppaPig"})
+@ComponentScan(basePackages = {"peppa", "com/peppa/peppapig"})
 @MapperScan(value = {"com.peppa.dal.dao"})
 @ServletComponentScan
 public class PeppaApplication {

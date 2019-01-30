@@ -4,24 +4,18 @@
  * use it only in accordance with the terms of the license agreement you entered
  * into with Tuhu.cn
  */
-package PeppaPig.controller;
+package peppa.peppapig.controller;
 
-import netscape.javascript.JSObject;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
-import org.apache.shiro.authc.AuthenticationToken;
 import org.apache.shiro.authc.UsernamePasswordToken;
-import org.apache.shiro.mgt.SecurityManager;
 import org.apache.shiro.subject.Subject;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
-import peppa.user.req.LoginReq;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.websocket.Session;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -34,12 +28,12 @@ public class LoginController {
 
     @RequestMapping(value = "/sign",method = RequestMethod.POST)
     @ResponseBody
-    public Map login(
+    public Map<String,Object> login(
             @RequestParam(value = "userPhone")String userPhone,
             @RequestParam(value = "password")String password,
             HttpServletRequest request, HttpServletResponse response){
 
-        Map result = new HashMap<>();
+        Map<String,Object> result = new HashMap<>();
         try {
             UsernamePasswordToken token = new UsernamePasswordToken();
             token.setUsername(userPhone);
@@ -67,9 +61,11 @@ public class LoginController {
             result.put("message",e.getMessage());
         }catch (Exception e){
             e.printStackTrace();
+            result.put("message",e.getMessage());
         }
         return result;
     }
+
 
     @RequestMapping("403")
     public String unauthorizedRole(){

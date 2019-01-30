@@ -1,2 +1,2 @@
 # peppa
-PeppaPig
+peppapig

@@ -4,7 +4,7 @@
  * use it only in accordance with the terms of the license agreement you entered
  * into with Tuhu.cn
  */
-package PeppaPig.config;
+package peppa.peppapig.config;
 
 import com.peppa.dal.model.PermissionDO;
 import com.peppa.dal.model.RoleInfo;

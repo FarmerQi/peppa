@@ -4,7 +4,7 @@
  * use it only in accordance with the terms of the license agreement you entered
  * into with Tuhu.cn
  */
-package PeppaPig.controller;
+package peppa.peppapig.controller;
 
 import com.peppa.dal.model.UserDO;
 import com.peppa.dal.model.UserInfo;
